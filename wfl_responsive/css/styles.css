@@ -1,0 +1,609 @@
+@font-face {
+    font-family: "gloriahallelujah";
+    src: url("../fonts/gloriahallelujah.eot");
+    src: url("../fonts/gloriahallelujah.eot#iefix") format("embedded-opentype"), url("../fonts/gloriahallelujah.woff") format("woff"), url("../fonts/gloriahallelujah.ttf") format("truetype"), url("../fonts/gloriahallelujah.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "montserrat-bold";
+    src: url("../fonts/montserrat-bold.eot");
+    src: url("../fonts/montserrat-bold.eot#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold.woff") format("woff"), url("../fonts/montserrat-bold.ttf") format("truetype"), url("../fonts/montserrat-bold.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/montserrat-regular.eot");
+    src: url("../fonts/montserrat-regular.eot#iefix") format("embedded-opentype"), url("../fonts/montserrat-regular.woff") format("woff"), url("../fonts/montserrat-regular.ttf") format("truetype"), url("../fonts/montserrat-regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "varela";
+    src: url("../fonts/varela-regular.eot");
+    src: url("../fonts/varela-regular.eot#iefix") format("embedded-opentype"), url("../fonts/varela-regular.woff") format("woff"), url("../fonts/varela-regular.ttf") format("truetype"), url("../fonts/varela-regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+/* set box sizing */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'varela', Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    font-size: 16px;
+    color: #555;
+    font-weight: normal;
+    font-style: normal;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+/* INTRO */
+
+.layout-intro {
+    position: relative;
+}
+.content-intro {
+    position: absolute;
+    height: 100px;
+    left: 30px;
+    top: 5px;
+    right: 30px;
+    text-align: center;
+}
+.title-intro {
+    font-size: 80px;
+    color: #fff;
+    padding: 64px 0 20px 0;
+    font-family: "gloriahallelujah", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.serpent-shape {
+    padding: 0px 0 41px 0;
+}
+.slogan-intro {
+    font-size: 25px;
+    color: #fff;
+    padding: 0 0 40px 0;
+    font-family: "montserrat-bold", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.nav-scrollbar {
+    background-color: #444;
+    top: 0;
+    right: 20px;
+    width: 40px;
+    height: 185px;
+    position: fixed;
+    background-image: url("../images/serpent-vertical.png");
+    background-repeat: no-repeat;
+    background-position: center;
+	z-index:1;
+}
+.location-intro {
+    font-size: 49px;
+    color: #fff;
+    padding: 0 0 40px 0;
+    font-family: "montserrat-bold", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.donation-intro {
+    font-size: 28px;
+    color: #fff;
+    font-family: "gloriahallelujah", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.circle-link-left {
+    left: 10px;
+    padding: 33px 0 0;
+    position: absolute;
+    top: -10px;
+}
+.circle-link-left2 {
+    left: 10px;
+    padding: 32px 0 0;
+    position: absolute;
+    top: 59px;
+}
+.circle-link-left3 {
+    left: 10px;
+    padding: 32px 0 0;
+    position: absolute;
+    top: 117px;
+}
+.circle-link-right {
+    left: 21px;
+    padding: 12px 0 0;
+    position: absolute;
+    top: 41px;
+}
+.circle-link-right2 {
+    left: 21px;
+    padding: 12px 0 0;
+    position: absolute;
+    top: 107px;
+}
+.circle-link:hover {
+    background-color: #f7ae57;
+}
+.circle-link {
+    display: block;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+.link-flag-right {
+    display: none;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: -3px;
+    right: 31px;
+    background-color: #f7ae57;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+.link-flag-right:after{
+    content:'';
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    float: right;
+    border-left: 20px solid #f7ae57;
+    position: absolute;
+    right: -20px;
+    top: 0px;
+
+}
+.link-flag-left {
+    display: none;
+    width: 220px;
+    background-color: #f7ae57;
+    height: 40px;
+    float: right;
+    position: absolute;
+    top: 18px;
+    right: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+.link-flag-left:after{
+    content:'';
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    float: right;
+    border-left: 20px solid #f7ae57;
+    position: absolute;
+    right: -20px;
+    top: 0px;
+}
+
+.circle-link-left:hover .link-flag-left   {
+    display: block;
+}
+.circle-link-right:hover .link-flag-right  {
+    display: block;
+}
+.circle-link-left2:hover .link-flag-left  {
+    display: block;
+}
+.circle-link-right2:hover .link-flag-right  {
+    display: block;
+}
+.circle-link-left3:hover .link-flag-left  {
+    display: block;
+}
+.text-modify-list{
+	color:#444;
+	font-family: "montserrat";
+	font-weight: normal;
+	font-style:normal;
+	font-size:17px;
+}
+
+/* Purpose */
+.purpose-class{
+	text-align:center;
+}
+.layout-purpose {
+    background-color: #444;
+}
+
+/* Progress bar */
+.progress-bar{
+	position: relative;
+	width: 500px;
+	height: 80px;
+	margin: -40px auto 0;
+	background-color: #555;
+	border: 10px solid #444;
+}
+	.progress{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60%;
+		height: 100%;
+		background: #f7ae57;
+	}
+	.current-value,
+	.total-value{
+		position: absolute;
+		bottom: -75px;
+		right: -54px;
+		font: normal normal 32px/normal "gloriahallelujah", Arial, Helvetica, sans-serif;
+	}
+	.current-value{
+		color: #f7ae57;
+	}
+	.total-value{
+		color: #666666;
+	}
+	.current-value:before,
+	.total-value:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -8px;
+		width: 0;
+		height: 0;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 8px solid #f7ae57;
+	}
+	.total-value:before{
+		border-bottom-color: #666666;
+	}
+	
+.presentation {
+    padding-top: 95px;
+}
+.title-purpose {
+	padding-bottom: 30px;
+    text-align: center;
+    color: white;
+    font-family: "montserrat-bold", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+}
+.serpent-horizontal {
+    padding-top: 30px;
+    padding-left: 320px;
+}
+.describe-purpose {
+    float: left;
+    width: 50%;
+}
+.describe-purpose2 {
+    float: right;
+    width: 50%;
+    padding-left: 14px;
+}
+.description {
+    padding-top: 55px;
+    padding-bottom: 100px;
+}
+.modify-text-purpose {
+    padding-bottom: 30px;
+    line-height: 1.7;
+    color: #fff;
+}
+.button-btn {
+    border: 2px solid #555;
+    width: 256px;
+    height: 35px;
+    padding: 5px;
+    text-decoration: none;
+    float: right;
+}
+.button-btn2 {
+    border: 2px solid #555;
+    width: 265px;
+    height: 35px;
+    padding: 5px;
+    text-decoration: none;
+    float: left;
+}
+.btn-tell {
+    padding: 55px;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #f7ae57;
+}
+.btn-join {
+    text-transform: uppercase;
+    padding: 30px;
+    font-size: 17px;
+    color: #f7ae57;
+}
+.button-btn:hover {
+    border: 2px solid #f7ae57;
+}
+.button-btn2:hover {
+    border: 2px solid #f7ae57;
+}
+/* Story */
+.story-class{
+	text-align:center;
+}
+.title-story {
+    text-align: center;
+    color: #f7ae57;
+    padding: 60px 0 30px 0;
+    font-family: "montserrat-bold", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+}
+.serpent-orange {
+    padding-left: 320px;
+}
+.describe-story {
+    float: left;
+    width: 50%;
+}
+.describe-story2 {
+    float: right;
+    width: 50%;
+    padding-left: 14px;
+}
+.modify-text-story {
+    padding-bottom: 30px;
+    line-height: 1.7;
+    color: #555;
+}
+.inline-list {
+    position: relative;
+    cursor: pointer;
+    display: inline;
+}
+.scroll {
+    background-color: #fff;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+.inline-list:hover .zoom {
+    display: block;
+}
+.zoom {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #eca858;
+    background-image: url("../images/zoom.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
+}
+.img-list {
+    width: 2000px;
+}
+.image-roll {
+    background-color: #e8e8e8;
+    width: 40px;
+    height: 10px;
+    float: left;
+}
+.image-roll:hover{
+background-color:#ccc;
+}
+.inline-roll {
+    display: inline-block;
+}
+.roll-image {
+    text-align: center;
+    padding: 40px;
+}
+/*TEAM*/
+
+.title-team {
+    text-align: center;
+    color: #555;
+    padding: 0 0 30px 0;
+    font-family: "montserrat-bold", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+}
+.list-team {
+    display: inline-block;
+    padding-left: 24px;
+}
+.name-sponsor {
+    text-align: center;
+    padding-top: 30px;
+    font-family: "gloriahallelujah", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+.describe-team {
+    padding: 110px 0 260px 0;
+}
+.team-class{
+	text-align:center;
+}
+.profile-sponsor {
+    position: relative;
+    cursor: pointer;
+}
+.tag-profile {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #eca858;
+    background-image: url("../images/tag.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.9;
+}
+.profile-sponsor:hover .tag-profile {
+    display: block;
+}
+/*JOIN THE ADVENTURE*/
+
+.layout-adventure {
+    background-color: #444;
+}
+.adventure-class{
+text-align:center;
+}
+.title-adventure {
+    text-align: center;
+    color: #fff;
+    padding: 60px 0 30px 0;
+    font-family: "montserrat-bold", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+}
+.description-adventure {
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    padding-top: 30px;
+}
+.frmcnt {
+    background: none repeat scroll 0 0 #444;
+    border-bottom: 1px solid #555;
+    border-top: medium none;
+    border-right: medium none;
+    border-left: medium none;
+    color: #fff;
+    height: 64px;
+    padding-left: 20px;
+    transition: outline 0.3s ease 0s;
+    width: 100%;
+	outline:none;
+}
+.frmcnt:focus {
+    border-bottom: 1px solid #f7ae57;
+}
+
+#contact .fLeft,
+#contact .fRight {
+    width: 50%;
+}
+#contact address {
+    font-size: 20px;
+}
+.contactDescription {
+    margin: 10px 0 55px;
+}
+#contactForm .row {
+    margin-bottom: 2px;
+}
+#contactForm {
+    padding-bottom: 100px;
+    padding: 50px 201px 100px 201px;
+}
+.styleText {
+    min-height: 128px;
+    padding-top: 25px;
+}
+.submit-button {
+    background: none repeat scroll 0 0 transparent;
+    color: #f7ae57;
+    font-size: 17px;
+    margin-top: 30px;
+    padding: 0;
+    transition: background 0.3s ease 0s, color 0.3s ease 0s;
+    width: 230px;
+    height: 40px;
+    text-transform: uppercase;
+	border:3px solid #555;
+}
+.submit-button:hover {
+    border: 3px solid #f7ae57;
+}
+/*FOOTER*/
+
+.footer-content {
+    padding: 110px 0 160px 0;
+	text-align:center;
+}
+.title-footer {
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: "gloriahallelujah", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.footer-describe {
+    text-align: center;
+    padding: 60px 0 20px 0;
+}
+
+.list-logo-footer {
+    display: inline-block;
+}
+.list-footer {
+    padding-top: 10px;
+    text-align: center;
+}
+
